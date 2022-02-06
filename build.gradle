@@ -63,8 +63,8 @@ tasks.withType(Javadoc) {
 shadowJar {
     archiveClassifier.set("")
 
+    relocate "com.google.code.gson", "me.clip.placeholderapi.google.gson"
     relocate "org.bstats", "me.clip.placeholderapi.metrics"
-    relocate "com.google", "me.clip.placeholderapi.google"
     relocate "net.kyori", "me.clip.placeholderapi.libs.kyori"
 }
 
